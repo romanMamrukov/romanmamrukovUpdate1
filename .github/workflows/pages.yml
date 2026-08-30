@@ -1,6 +1,8 @@
 name: Deploy portfolio to GitHub Pages
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -23,7 +25,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Configure Pages
         uses: actions/configure-pages@v5
-      - name: Upload site
+      - name: Upload static site
         uses: actions/upload-pages-artifact@v3
         with:
           path: .
