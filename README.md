@@ -1,28 +1,23 @@
 # Roman Mamrukov — Personal Brand Website
 
-A sales-oriented personal brand website for Roman Mamrukov, focused on reliable business websites, lead and operations systems, technical support engineering, and automation.
+Production-oriented personal brand website positioning Roman as a Technical Support Engineer, product builder and automation specialist.
 
-## Positioning
+## Included work
 
-The site is designed to answer four questions within the first viewport:
+- Work to Income
+- Freelance IT Ops Console
+- Repair Marketplace
+- Auto Repair Shop
+- Alus Bode
+- Entrega
+- QR Generator
+- Web Testbench
 
-- who Roman is;
-- which business problems he solves;
-- how his engineering background changes the quality of delivery;
-- how a prospective client can start a conversation.
+## Stack
 
-It deliberately avoids a generic developer portfolio structure. Selected projects are framed as business and operational case studies, with prototype status stated explicitly and no unsupported outcome claims.
+Semantic HTML, responsive CSS and minimal vanilla JavaScript. No build step or runtime dependency is required.
 
-## Technology
-
-- semantic HTML5;
-- modern responsive CSS;
-- minimal vanilla JavaScript;
-- no framework or runtime dependency;
-- GitHub Pages compatible;
-- reduced-motion support and keyboard focus states.
-
-## Run locally
+## Local preview
 
 ```bash
 python -m http.server 8080
@@ -30,21 +25,10 @@ python -m http.server 8080
 
 Open `http://localhost:8080`.
 
-## Validation
+## GitHub Pages
 
-Before publishing, verify:
+The workflow in `.github/workflows/pages.yml` deploys automatically after every push to `main`. In repository settings, select **GitHub Actions** as the Pages source.
 
-- all external demo and repository links;
-- email and LinkedIn contact details;
-- current role wording and dates;
-- desktop, tablet, and mobile layouts;
-- the portrait asset loads from the original portfolio repository;
-- pricing remains aligned with the current commercial offer.
+Expected URL: https://romanmamrukov.github.io/romanmamrukovUpdate1/
 
-## Deployment
-
-The included GitHub Pages workflow is manual by design. Open **Actions → Deploy portfolio to GitHub Pages → Run workflow** after reviewing the content. This prevents the new version from replacing or competing with the current portfolio before approval.
-
-## Source preservation
-
-The existing `romanMamrukov/romanmamrukov` portfolio is not modified. This repository is an independent professional-brand iteration.
+GitHub Pages is free for public repositories. If this repository is private, change its visibility to public before enabling Pages on a free GitHub account.
