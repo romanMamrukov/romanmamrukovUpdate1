@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Roman Mamrukov builds reliable business websites, workflow systems and automation for small businesses and independent professionals.">
   <meta name="theme-color" content="#101715">
+  <meta name="color-scheme" content="light dark">
   <meta property="og:title" content="Roman Mamrukov — Engineering digital systems for real business">
   <meta property="og:description" content="Business websites, operational tools and automation built with an engineer's attention to reliability.">
   <meta property="og:type" content="website">
@@ -12,8 +13,28 @@
   <link rel="canonical" href="https://romanmamrukov.github.io/romanmamrukovUpdate1/">
   <link rel="stylesheet" href="./styles.css">
   <script src="./script.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "dateModified": "2026-11-10",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Roman Mamrukov",
+      "url": "https://romanmamrukov.github.io/romanmamrukovUpdate1/",
+      "jobTitle": "Technical Support Engineer and product builder",
+      "homeLocation": { "@type": "Place", "name": "Riga, Latvia" },
+      "sameAs": [
+        "https://github.com/romanMamrukov",
+        "https://www.linkedin.com/in/roman-mamrukov/",
+        "https://www.self.so/romansmamrukovs-uc8yxi"
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="hero" id="home">
     <aside class="identity-panel" aria-label="Roman Mamrukov profile">
       <a class="wordmark" href="#home"><span class="wordmark-mark">RM</span><span>Roman Mamrukov</span></a>
@@ -28,11 +49,14 @@
         <nav aria-label="Primary navigation">
           <a href="#work">Work</a><a href="#services">Services</a><a href="#approach">Approach</a><a href="#experience">Experience</a>
         </nav>
-        <a class="topbar-contact" href="#contact">Start a project →</a>
+        <div class="topbar-tools">
+          <button class="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false"><span aria-hidden="true">◐</span><span>Theme</span></button>
+          <a class="topbar-contact" href="#contact">Start a project →</a>
+        </div>
       </div>
       <div class="hero-copy">
         <p class="eyebrow">Engineering clarity for growing businesses</p>
-        <h1>I turn operational friction into <em>working digital systems.</em></h1>
+        <h1>Turn operational friction into <em>working digital systems.</em></h1>
         <p class="hero-lede">I build reliable websites, internal tools and automation for small businesses and independent professionals—combining software delivery with production support discipline.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#work">View selected work <span>↓</span></a>
@@ -47,7 +71,19 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
+    <section class="audience-router" aria-labelledby="audience-title">
+      <div class="audience-intro">
+        <p class="section-kicker">Choose your route</p>
+        <h2 id="audience-title">One engineering practice. Four useful entry points.</h2>
+      </div>
+      <nav class="audience-links" aria-label="Audience routes">
+        <a href="#experience"><span>01 · Employers</span><strong>Production support and engineering evidence</strong><span aria-hidden="true">↘</span></a>
+        <a href="#services"><span>02 · Clients</span><strong>Websites, workflow systems and automation</strong><span aria-hidden="true">↘</span></a>
+        <a href="#approach"><span>03 · Collaborators</span><strong>Delivery method and technical foundation</strong><span aria-hidden="true">↘</span></a>
+        <a href="#work"><span>04 · Product users</span><strong>Live tools and product experiments</strong><span aria-hidden="true">↘</span></a>
+      </nav>
+    </section>
     <section class="proof-band" aria-label="Working principles">
       <p>Built around the business problem, not the framework.</p>
       <div class="proof-list"><span>Static-first where practical</span><span>Free hosting ready</span><span>Maintainable handover</span></div>
@@ -134,7 +170,7 @@
     <section class="contact-section" id="contact">
       <span class="contact-index">05 · Contact</span>
       <div class="contact-main"><p class="section-kicker section-kicker-light">Start with the operational problem</p><h2>Describe what is slow, manual or losing business.</h2><p>Include the current process, who uses it and what a useful result would look like. I will respond with a practical first scope.</p><a class="contact-email" href="mailto:roman.mamrukov@gmail.com"><span>roman.mamrukov@gmail.com</span><span>↗</span></a></div>
-      <div class="contact-links"><a href="https://github.com/romanMamrukov" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/roman-mamrukov/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://wa.me/37126626578" target="_blank" rel="noreferrer">WhatsApp ↗</a></div>
+      <div class="contact-links"><a href="https://github.com/romanMamrukov" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/roman-mamrukov/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://wa.me/37126626578" target="_blank" rel="noreferrer">WhatsApp ↗</a><a href="https://www.self.so/romansmamrukovs-uc8yxi" target="_blank" rel="noreferrer">Résumé ↗</a></div>
     </section>
   </main>
   <footer><span>© <span id="current-year">2026</span> Roman Mamrukov</span><span>Riga · Latvia</span><span>Built as a static, accessible site</span></footer>
