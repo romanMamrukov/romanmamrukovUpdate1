@@ -17,6 +17,12 @@ Production-oriented personal brand website positioning Roman as a Technical Supp
 
 Semantic HTML, responsive CSS and minimal vanilla JavaScript. No build step or runtime dependency is required.
 
+## Design experiment
+
+The staging site tests a **Technical Founder** direction: editorial typography, selective bento-style audience routing, restrained cobalt and acid-green accents, optional dark mode, and evidence-led project presentation. The implementation remains dependency-free so visual decisions can be validated before any framework migration.
+
+The previous staging baseline is preserved in the `baseline-before-trends-2026-11-10` branch.
+
 ## Local preview
 
 ```bash
