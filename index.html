@@ -11,8 +11,17 @@
   <meta property="og:type" content="website">
   <title>Roman Mamrukov — Engineer, Product Builder & Automation Specialist</title>
   <link rel="canonical" href="https://romanmamrukov.github.io/romanmamrukovUpdate1/">
-  <link rel="stylesheet" href="./styles.css">
-  <script src="./script.js" defer></script>
+  <script>
+    // Apply a saved choice before the first paint; blocked storage uses the OS theme.
+    try {
+      const savedTheme = localStorage.getItem("rm-theme");
+      if (savedTheme === "light" || savedTheme === "dark") {
+        document.documentElement.dataset.theme = savedTheme;
+      }
+    } catch (_) { /* The site remains usable when storage is unavailable. */ }
+  </script>
+  <link rel="stylesheet" href="./styles.css?v=20261110-contrast">
+  <script src="./script.js?v=20261110-contrast" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -97,42 +106,42 @@
       <div class="project-list">
         <article class="project">
           <div class="project-rail"><span>01</span><span>Freelance operations</span></div>
-          <div class="project-main"><div class="project-title-row"><p>Work to Income</p><span class="project-status">Active product</span></div><h3>A local-first workspace from completed work to spendable income.</h3><p class="project-description">A privacy-conscious tool for freelancers and self-employed professionals to manage work, invoicing and income without mandatory accounts or subscriptions.</p></div>
+          <div class="project-main"><div class="project-title-row"><h3 class="project-name">Work to Income</h3><span class="project-status">Active product</span></div><p class="project-summary">A local-first workspace from completed work to spendable income.</p><p class="project-description">A privacy-conscious tool for freelancers and self-employed professionals to manage work, invoicing and income without mandatory accounts or subscriptions.</p></div>
           <div class="project-result"><p class="project-result-label">Product direction</p><p>Reduces administrative friction while keeping user data in the browser with exportable backups.</p><div class="project-links"><a href="https://romanmamrukov.github.io/work-to-income/" target="_blank" rel="noreferrer">Live product ↗</a><a href="https://github.com/romanMamrukov/work-to-income" target="_blank" rel="noreferrer">Repository ↗</a></div></div>
         </article>
         <article class="project">
           <div class="project-rail"><span>02</span><span>Workflow system</span></div>
-          <div class="project-main"><div class="project-title-row"><p>Freelance IT Ops Console</p><span class="project-status">Prototype</span></div><h3>One operational view for freelance tasks and invoices.</h3><p class="project-description">A browser-based management console designed to reduce the distance between receiving work, completing it and producing an invoice.</p></div>
+          <div class="project-main"><div class="project-title-row"><h3 class="project-name">Freelance IT Ops Console</h3><span class="project-status">Prototype</span></div><p class="project-summary">One operational view for freelance tasks and invoices.</p><p class="project-description">A browser-based management console designed to reduce the distance between receiving work, completing it and producing an invoice.</p></div>
           <div class="project-result"><p class="project-result-label">System value</p><p>Consolidates fragmented administration into a focused, reusable workflow.</p><div class="project-links"><a href="https://romanmamrukov.github.io/freemgsys/" target="_blank" rel="noreferrer">Live demo ↗</a><a href="https://github.com/romanMamrukov/freemgsys" target="_blank" rel="noreferrer">Repository ↗</a></div></div>
         </article>
         <article class="project">
           <div class="project-rail"><span>03</span><span>Marketplace MVP</span></div>
-          <div class="project-main"><div class="project-title-row"><p>Repair Marketplace</p><span class="project-status">MVP</span></div><h3>A structured route from repair request to local specialist.</h3><p class="project-description">A marketplace concept for describing repair needs, adding context and connecting customers with suitable local providers.</p></div>
+          <div class="project-main"><div class="project-title-row"><h3 class="project-name">Repair Marketplace</h3><span class="project-status">MVP</span></div><p class="project-summary">A structured route from repair request to local specialist.</p><p class="project-description">A marketplace concept for describing repair needs, adding context and connecting customers with suitable local providers.</p></div>
           <div class="project-result"><p class="project-result-label">Validation asset</p><p>Built to test demand and workflow assumptions before investing in a full marketplace platform.</p><div class="project-links"><a href="https://romanmamrukov.github.io/repair-marketplace/" target="_blank" rel="noreferrer">Live demo ↗</a><a href="https://github.com/romanMamrukov/repair-marketplace" target="_blank" rel="noreferrer">Repository ↗</a></div></div>
         </article>
         <article class="project">
           <div class="project-rail"><span>04</span><span>Automotive platform</span></div>
-          <div class="project-main"><div class="project-title-row"><p>Auto Repair Shop</p><span class="project-status">Reusable platform</span></div><h3>A modern sales and service presence for automotive businesses.</h3><p class="project-description">A reusable platform concept for workshops and vehicle sellers, including easy inventory publishing and responsive customer-facing pages.</p></div>
+          <div class="project-main"><div class="project-title-row"><h3 class="project-name">Auto Repair Shop</h3><span class="project-status">Reusable platform</span></div><p class="project-summary">A modern sales and service presence for automotive businesses.</p><p class="project-description">A reusable platform concept for workshops and vehicle sellers, including easy inventory publishing and responsive customer-facing pages.</p></div>
           <div class="project-result"><p class="project-result-label">Commercial use</p><p>Designed as a repeatable foundation that can be adapted for multiple automotive clients.</p><div class="project-links"><a href="https://romanmamrukov.github.io/auto-repair-shop/" target="_blank" rel="noreferrer">Live demo ↗</a><a href="https://github.com/romanMamrukov/auto-repair-shop" target="_blank" rel="noreferrer">Repository ↗</a></div></div>
         </article>
         <article class="project">
           <div class="project-rail"><span>05</span><span>Client website</span></div>
-          <div class="project-main"><div class="project-title-row"><p>Alus Bode</p><span class="project-status">Production</span></div><h3>A focused digital storefront for a Latvian drinks retailer.</h3><p class="project-description">A responsive business website that presents the brand, product offer and customer contact routes clearly.</p></div>
+          <div class="project-main"><div class="project-title-row"><h3 class="project-name">Alus Bode</h3><span class="project-status">Production</span></div><p class="project-summary">A focused digital storefront for a Latvian drinks retailer.</p><p class="project-description">A responsive business website that presents the brand, product offer and customer contact routes clearly.</p></div>
           <div class="project-result"><p class="project-result-label">Delivery</p><p>A lightweight, maintainable implementation suited to reliable low-cost hosting.</p><div class="project-links"><a href="https://romanmamrukov.github.io/alusbode.lv/" target="_blank" rel="noreferrer">Live site ↗</a><a href="https://github.com/romanMamrukov/alusbode.lv" target="_blank" rel="noreferrer">Repository ↗</a></div></div>
         </article>
         <article class="project">
           <div class="project-rail"><span>06</span><span>Client website</span></div>
-          <div class="project-main"><div class="project-title-row"><p>Entrega</p><span class="project-status">Production</span></div><h3>A professional company presence built for clarity and access.</h3><p class="project-description">A responsive website implementation for a Latvian business, structured around clear information and practical customer journeys.</p></div>
+          <div class="project-main"><div class="project-title-row"><h3 class="project-name">Entrega</h3><span class="project-status">Production</span></div><p class="project-summary">A professional company presence built for clarity and access.</p><p class="project-description">A responsive website implementation for a Latvian business, structured around clear information and practical customer journeys.</p></div>
           <div class="project-result"><p class="project-result-label">Delivery</p><p>Production-oriented frontend work with a maintainable static deployment model.</p><div class="project-links"><a href="https://romanmamrukov.github.io/entrega.lv/" target="_blank" rel="noreferrer">Live site ↗</a><a href="https://github.com/romanMamrukov/entrega.lv" target="_blank" rel="noreferrer">Repository ↗</a></div></div>
         </article>
         <article class="project">
           <div class="project-rail"><span>07</span><span>Automation utility</span></div>
-          <div class="project-main"><div class="project-title-row"><p>QR Generator</p><span class="project-status">Utility</span></div><h3>Bulk QR generation integrated with spreadsheet workflows.</h3><p class="project-description">A Python utility that reads source data from Excel, generates QR codes and places the resulting assets back into the workbook.</p></div>
+          <div class="project-main"><div class="project-title-row"><h3 class="project-name">QR Generator</h3><span class="project-status">Utility</span></div><p class="project-summary">Bulk QR generation integrated with spreadsheet workflows.</p><p class="project-description">A Python utility that reads source data from Excel, generates QR codes and places the resulting assets back into the workbook.</p></div>
           <div class="project-result"><p class="project-result-label">Automation value</p><p>Replaces repetitive manual asset creation with a consistent batch process.</p><div class="project-links"><a href="https://romanmamrukov.github.io/qrGenerator/" target="_blank" rel="noreferrer">Project page ↗</a><a href="https://github.com/romanMamrukov/qrGenerator" target="_blank" rel="noreferrer">Repository ↗</a></div></div>
         </article>
         <article class="project">
           <div class="project-rail"><span>08</span><span>Developer tool</span></div>
-          <div class="project-main"><div class="project-title-row"><p>Web Testbench</p><span class="project-status">Tool</span></div><h3>A zero-setup browser workbench for frontend experiments.</h3><p class="project-description">Write and preview HTML, CSS and JavaScript in real time without a local development environment.</p></div>
+          <div class="project-main"><div class="project-title-row"><h3 class="project-name">Web Testbench</h3><span class="project-status">Tool</span></div><p class="project-summary">A zero-setup browser workbench for frontend experiments.</p><p class="project-description">Write and preview HTML, CSS and JavaScript in real time without a local development environment.</p></div>
           <div class="project-result"><p class="project-result-label">Utility</p><p>Shortens the feedback loop for demonstrations, experiments and isolated frontend debugging.</p><div class="project-links"><a href="https://romanmamrukov.github.io/webtestbench/" target="_blank" rel="noreferrer">Live tool ↗</a><a href="https://github.com/romanMamrukov/webtestbench" target="_blank" rel="noreferrer">Repository ↗</a></div></div>
         </article>
       </div>

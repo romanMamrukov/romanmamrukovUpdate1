@@ -1,38 +1,31 @@
 document.getElementById("current-year").textContent = new Date().getFullYear();
 
-document.querySelectorAll('a[href^="#"]').forEach((link) => {
-  link.addEventListener("click", () => {
-    document.activeElement?.blur();
-  });
-});
-
 const themeToggle = document.querySelector(".theme-toggle");
 const themeColor = document.querySelector('meta[name="theme-color"]');
-const storedTheme = localStorage.getItem("rm-theme");
-
-if (storedTheme === "light" || storedTheme === "dark") {
-  document.documentElement.dataset.theme = storedTheme;
-}
+const systemTheme = window.matchMedia("(prefers-color-scheme: dark)");
 
 const resolvedTheme = () => {
   if (document.documentElement.dataset.theme) return document.documentElement.dataset.theme;
-  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  return systemTheme.matches ? "dark" : "light";
 };
 
 const syncThemeControl = () => {
   const isDark = resolvedTheme() === "dark";
   themeToggle?.setAttribute("aria-pressed", String(isDark));
   themeToggle?.setAttribute("aria-label", `Switch to ${isDark ? "light" : "dark"} theme`);
-  themeColor?.setAttribute("content", isDark ? "#111411" : "#f3f1ea");
+  themeColor?.setAttribute("content", isDark ? "#111611" : "#f3f1ea");
 };
 
 themeToggle?.addEventListener("click", () => {
   const nextTheme = resolvedTheme() === "dark" ? "light" : "dark";
   document.documentElement.dataset.theme = nextTheme;
-  localStorage.setItem("rm-theme", nextTheme);
+  try {
+    localStorage.setItem("rm-theme", nextTheme);
+  } catch (_) { /* The current selection still works without persistent storage. */ }
   syncThemeControl();
 });
 
+systemTheme.addEventListener("change", syncThemeControl);
 syncThemeControl();
 
 
